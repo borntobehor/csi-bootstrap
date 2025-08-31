@@ -1,0 +1,39 @@
+[data-bs-theme="light"] {
+	--bs-body-color: var(--dark);
+	--bs-body-bg: var(--light);
+	--bs-emphasis-color-rgb: 255, 255, 255;
+	--bs-secondary-bg: var(--secondary);
+	--bs-secondary-color: #fff;
+	--bs-border-color: #3a3a3a;
+	--bs-primary: #9b59ff;
+	--bs-secondary: #6c757d;
+	--bs-success: #198754;
+	--bs-info: #0dcaf0;
+	--bs-warning: #ffc107;
+	--bs-danger: #dc3545;
+	--bs-light: #f8f9fa;
+	--bs-dark: var(--dark);
+	.nav-link {
+		color: var(--dark);
+	}
+}
+
+[data-bs-theme="dark"] {
+	--bs-body-color: var(--light);
+	--bs-body-bg: var(--dark);
+	--bs-emphasis-color-rgb: 255, 255, 255;
+	--bs-secondary-bg: #2c2c2c;
+	--bs-secondary-color: #fff;
+	--bs-border-color: #3a3a3a;
+	--bs-primary: #9b59ff;
+	--bs-secondary: #6c757d;
+	--bs-success: #198754;
+	--bs-info: #0dcaf0;
+	--bs-warning: #ffc107;
+	--bs-danger: #dc3545;
+	--bs-light: #f8f9fa;
+	--bs-dark: #212529;
+	.nav-link {
+		color: var(--light);
+	}
+}
