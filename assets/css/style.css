@@ -70,19 +70,4 @@ body {
 		}
 	}
 }
-@media screen and (max-width: 991px) {
-	@keyframes glass {
-		0% {
-			width: 100%;
-			background-color: var(--bs-primary);
-			border-radius: 0px;
-		}
-		5%,
-		100% {
-			width: 80%;
-			background-color: var(--bs-primary);
-			top: 20px;
-			border-radius: 20px;
-		}
-	}
-}
+
