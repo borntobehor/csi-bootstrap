@@ -2,601 +2,595 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ប្រភេទជំនួយ</title>
-  <!-- * css -->
-  <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" href="../../css/style.css" />
-  <!-- * animation -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>ប្រភេទជំនួយ</title>
+   <!-- * css -->
+   <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css" />
+   <link rel="stylesheet" href="../../css/style.css" />
+   <!-- * animation -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <style>
-  .card-img:hover {
-    border: 1px solid #090909;
-    border-radius: 10px;
-  }
+   .card-img:hover {
+      border: 1px solid #090909;
+      border-radius: 10px;
+   }
 
-  .card {
-    border: 1px solid #eee;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s;
-  }
+   .card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+   }
 
-  .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+   .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
 </style>
 
 <body>
-  <header class="mx-auto z-3" data-csi="glass">
-    <nav class="navbar navbar-expand-lg align-items-center py-3 flex-nowrap">
-      <div class="container-fluid container-md align-items">
-        <a class="navbar-brand text-dark" href="#" data-aos="fade-down" data-aos-duration="1000">CSI</a>
-        <div class="w-100 d-flex flex-row-reverse flex-lg-row">
-          <button class="navbar-toggler border-0 shadow-none ms-5" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-            data-aos="fade-down" data-aos-duration="1000">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-light" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">
-                CSI
-              </h5>
-              <button type="button" class="btn-close shadow-none fs-5" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+   <header class="mx-auto z-3" data-csi="glass">
+      <nav class="navbar navbar-expand-lg align-items-center py-3 flex-nowrap">
+         <div class="container-fluid container-md align-items">
+            <a class="navbar-brand text-dark" href="#" data-aos="fade-down" data-aos-duration="1000">CSI</a>
+            <div class="d-flex align-items-lg-center flex-row-reverse flex-lg-row">
+               <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                  data-aos="fade-down" data-aos-duration="1000">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end text-light" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                     <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">CSI</h5>
+                     <button type="button" class="btn-close shadow-none fs-5" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <ul class="navbar-nav flex-grow-1 me-5 header-link" data-aos="fade-down" data-aos-duration="1000">
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="#">ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="assets/html/categories/categories.html">ប្រភេទជំនួយ</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">អ្នកស្ម័គ្រចិត្ត</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">សកម្មភាព</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">ទំនាក់ទំនងពួកយើង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              អំពីយើង
+                           </a>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">សមាជិកក្រុម</a></li>
+                              <li><a class="dropdown-item" href="#">គោលបំណង</a></li>
+                              <li><a class="dropdown-item" href="#">វាយតម្លៃ</a></li>
+                              <li>
+                                 <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">ឯកសារយោង</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <a href="#" class="btn btn-primary fw-medium rounded-5 text-nowrap" data-aos="fade-down"
+                  data-aos-duration="1000">បរិច្ចាកឥឡូវនេះ</a>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-grow-1 header-link" data-aos="fade-down" data-aos-duration="1000">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">ទំព័រដើម</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ប្រភេទជំនួយ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">អ្នកស្ម័គ្រចិត្ត</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">សកម្មភាព</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ទំនាក់ទំនងពួកយើង</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    អំពីយើង
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">សមាជិកក្រុម</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">គោលបំណង</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">វាយតម្លៃ</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">ឯកសារយោង</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="#" class="btn btn-primary fw-medium rounded-5 text-nowrap" data-aos="fade-down"
-            data-aos-duration="1000">បរិច្ចាកឥឡូវនេះ</a>
-        </div>
-        <!-- <div class="d-flex">
+            <!-- <div class="d-flex">
 						<form class="d-flex bg-light rounded-5" role="search">
 							<input class="form-control bg-transparent border-0 me-2 shadow-none" type="text" placeholder="Search" aria-label="Search" />
 							<button class="btn btn-secondary text-dark rounded-circle" style="scale: .8;" type="submit"><i class="bi bi-search"></i></button>
 						</form>
 					</div> -->
+         </div>
+      </nav>
+   </header>
+   <section class="categories border-1">
+      <div class="container">
+         <h1 class="text-primary my-3 fs-1 fw-bold">ប្រភេទជំនួយ</h1>
+         <p class="text-primary fs-4 fw-medium">
+            សូមជ្រើសរើសប្រភេទជំនួយដែលអ្នកត្រូវការបន្ថែម
+         </p>
+         <div class="row">
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="natural-disaster.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/natural-disaster-card.jpg" class="card-img-top"
+                           alt="Natural Disaster" style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយគ្រោះធម្មជាតិ
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="accidents.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/Accidents.png" class="card-img-top" alt="Accidents"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="animal.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/animal.png" class="card-img-top" alt="Animal"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយដល់សត្វអនាថា
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="education.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/education.png" class="card-img-top" alt="Education"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយការអប់រំ
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="humanity.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/humanity.png" class="card-img-top" alt="Humanity"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយមនុស្សធម៌
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="medical.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/medical.png" class="card-img-top" alt="Medical"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយសុខាភិបាល
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="war.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/war.png" class="card-img-top" alt="War"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយសង្គ្រាម
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="housing.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/housing.png" class="card-img-top" alt="Housing"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយស្នាក់នៅ
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-md-4 col-lg-2 my-3 text-primary">
+               <a href="culture.html" class="text-decoration-none">
+                  <div class="shadow-sm text-center">
+                     <div class="card-img py-1">
+                        <img src="../../image/categories/card-img/culture.png" class="card-img-top" alt="Culture"
+                           style="width: 80px; height: 100px" />
+                        <div class="card-body text-center my-3">
+                           <p class="card-title text-primary">
+                              ជំនួយវប្បធម៌
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
       </div>
-    </nav>
-  </header>
-  <section class="categories border-1">
-    <div class="container">
-      <h1 class="text-primary my-3 fs-1 fw-bold">ប្រភេទជំនួយ</h1>
-      <p class="text-primary fs-4 fw-medium">
-        សូមជ្រើសរើសប្រភេទជំនួយដែលអ្នកត្រូវការបន្ថែម
-      </p>
+   </section>
+   <!-- Medical Fundraisers Section -->
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយគ្រោះធម្មជាតិ</h2>
       <div class="row">
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="natural-disaster.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/natural-disaster-card.jpg" class="card-img-top" alt="Natural Disaster"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយគ្រោះធម្មជាតិ
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/1.avif" class="card-img-top" alt="SykoStu Recovery Journey" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $171,395 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="accidents.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/Accidents.png" class="card-img-top" alt="Accidents"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/6975575681_efa7b23a77_o-1024x576.jpg" class="card-img-top"
+                  alt="Sophia and Forchas Family" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $89,502 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="animal.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/animal.png" class="card-img-top" alt="Animal"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយដល់សត្វអនាថា
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/Lead-2-750x440.jpg" class="card-img-top"
+                  alt="Maisie Evans Marsau Accident" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $112,224 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
+         </div>
+      </div>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
+      </div>
+   </section>
 
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="education.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/education.png" class="card-img-top" alt="Education"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយការអប់រំ
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h2>
+      <div class="row">
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/image_67a5c99ca29ba.jpg" class="card-img-top"
+                  alt="SykoStu Recovery Journey" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $171,395 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="humanity.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/humanity.png" class="card-img-top" alt="Humanity"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយមនុស្សធម៌
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/fn-2019-06-24-10-12-35-0.jpg" class="card-img-top"
+                  alt="Sophia and Forchas Family" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $89,502 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="medical.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/medical.png" class="card-img-top" alt="Medical"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយសុខាភិបាល
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/9166241.12.2019.11614936996015483.jpg" class="card-img-top"
+                  alt="Maisie Evans Marsau Accident" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $112,224 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
+         </div>
+      </div>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
+      </div>
+   </section>
 
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="war.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/war.png" class="card-img-top" alt="War"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយសង្គ្រាម
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយដល់សត្វអនាថា</h2>
+      <div class="row">
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/animel.png" class="card-img-top" alt="SykoStu Recovery Journey"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1071,395 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="housing.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/housing.png" class="card-img-top" alt="Housing"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយស្នាក់នៅ
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/images.jpg" class="card-img-top"
+                  alt="Sophia and Forchas Family" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
+                  <p class="card-text text-success fw-bold">
+                     $895,502 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-lg-2 my-3 text-primary">
-          <a href="culture.html" class="text-decoration-none">
-            <div class="shadow-sm text-center">
-              <div class="card-img py-1">
-                <img src="../../img/card-img/culture.png" class="card-img-top" alt="Culture"
-                  style="width: 80px; height: 100px" />
-                <div class="card-body text-center my-3">
-                  <p class="card-title text-primary">
-                    ជំនួយវប្បធម៌
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/6fed72a61491c102e319ac25d3213cf994ec6b07.jpg"
+                  class="card-img-top" alt="Maisie Evans Marsau Accident" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1104,224 raised
                   </p>
-                </div>
-              </div>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </a>
-        </div>
+         </div>
       </div>
-    </div>
-  </section>
-  <!-- Medical Fundraisers Section -->
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយគ្រោះធម្មជាតិ</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/1.avif" class="card-img-top" alt="SykoStu Recovery Journey" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
-            <p class="card-text text-success fw-bold">
-              $171,395 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/6975575681_efa7b23a77_o-1024x576.jpg" class="card-img-top"
-            alt="Sophia and Forchas Family" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
-            <p class="card-text text-success fw-bold">
-              $89,502 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/Lead-2-750x440.jpg" class="card-img-top" alt="Maisie Evans Marsau Accident" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះធម្មជាតិ</h5>
-            <p class="card-text text-success fw-bold">
-              $112,224 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
+   </section>
 
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/image_67a5c99ca29ba.jpg" class="card-img-top" alt="SykoStu Recovery Journey"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
-            <p class="card-text text-success fw-bold">
-              $171,395 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100"></div>
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយការអប់រំ</h2>
+      <div class="row">
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/images (1).jpg" class="card-img-top"
+                  alt="SykoStu Recovery Journey" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយការអប់រំ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1071,395 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/fn-2019-06-24-10-12-35-0.jpg" class="card-img-top"
-            alt="Sophia and Forchas Family" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
-            <p class="card-text text-success fw-bold">
-              $89,502 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/photo_2024-08-08_10-10-52 (2).j.jpg" class="card-img-top"
+                  alt="Sophia and Forchas Family" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយការអប់រំ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $895,502 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/9166241.12.2019.11614936996015483.jpg" class="card-img-top"
-            alt="Maisie Evans Marsau Accident" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយគ្រោះថ្នាក់ឧបទ្ទវហេតុ</h5>
-            <p class="card-text text-success fw-bold">
-              $112,224 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/www.khemaradaily.com-2024-03-24_11-34-20_237412.webp"
+                  class="card-img-top" alt="Maisie Evans Marsau Accident" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយការអប់រំ</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1104,224 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
+      </div>
+   </section>
 
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយដល់សត្វអនាថា</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/animel.png" class="card-img-top" alt="SykoStu Recovery Journey"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
-            <p class="card-text text-success fw-bold">
-              $1071,395 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100"></div>
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយសង្គ្រាមនិងជនភាសសឹក</h2>
+      <div class="row">
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/war1.jpg" class="card-img-top" alt="SykoStu Recovery Journey"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសង្គ្រាម</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1071,395 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/images.jpg" class="card-img-top" alt="Sophia and Forchas Family"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
-            <p class="card-text text-success fw-bold">
-              $895,502 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/war2.png" class="card-img-top" alt="Sophia and Forchas Family"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសង្គ្រាម</h5>
+                  <p class="card-text text-success fw-bold">
+                     $895,502 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/6fed72a61491c102e319ac25d3213cf994ec6b07.jpg" class="card-img-top"
-            alt="Maisie Evans Marsau Accident" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយដល់សត្វអនាថា</h5>
-            <p class="card-text text-success fw-bold">
-              $1104,224 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/war3.png" class="card-img-top"
+                  alt="Maisie Evans Marsau Accident" style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសង្គ្រាមនិងជនភាសសឹក</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1104,224 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
+      </div>
+   </section>
 
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយការអប់រំ</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/images (1).jpg" class="card-img-top" alt="SykoStu Recovery Journey"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយការអប់រំ</h5>
-            <p class="card-text text-success fw-bold">
-              $1071,395 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100"></div>
+   <section class="container my-5">
+      <h2 class="mb-4">ជំនួយសុខាភិបាល</h2>
+      <div class="row">
+         <div class="col-md-4 mb-4">
+            <div class="card">
+               <img src="../../image/categories/more-img/health1.png" class="card-img-top" alt="Health Aid 1"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1,200,000 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/photo_2024-08-08_10-10-52 (2).j.jpg" class="card-img-top"
-            alt="Sophia and Forchas Family" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយការអប់រំ</h5>
-            <p class="card-text text-success fw-bold">
-              $895,502 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/health2.png" class="card-img-top" alt="Health Aid 2"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
+                  <p class="card-text text-success fw-bold">
+                     $800,000 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/www.khemaradaily.com-2024-03-24_11-34-20_237412.webp" class="card-img-top"
-            alt="Maisie Evans Marsau Accident" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយការអប់រំ</h5>
-            <p class="card-text text-success fw-bold">
-              $1104,224 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <div class="col-md-4 mb-4">
+            <div class="card h-100">
+               <img src="../../image/categories/more-img/health3.png" class="card-img-top" alt="Health Aid 3"
+                  style="height: 280px" />
+               <div class="card-body">
+                  <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
+                  <p class="card-text text-success fw-bold">
+                     $1,500,000 raised
+                  </p>
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
-
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយសង្គ្រាមនិងជនភាសសឹក</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/war1.jpg" class="card-img-top" alt="SykoStu Recovery Journey"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសង្គ្រាម</h5>
-            <p class="card-text text-success fw-bold">
-              $1071,395 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+      <div class="text-end">
+         <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/war2.png" class="card-img-top" alt="Sophia and Forchas Family"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសង្គ្រាម</h5>
-            <p class="card-text text-success fw-bold">
-              $895,502 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/war3.png" class="card-img-top" alt="Maisie Evans Marsau Accident"
-            style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសង្គ្រាមនិងជនភាសសឹក</h5>
-            <p class="card-text text-success fw-bold">
-              $1104,224 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
-
-  <section class="container my-5">
-    <h2 class="mb-4">ជំនួយសុខាភិបាល</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="../../img/more-img/health1.png" class="card-img-top" alt="Health Aid 1" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
-            <p class="card-text text-success fw-bold">
-              $1,200,000 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/health2.png" class="card-img-top" alt="Health Aid 2" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
-            <p class="card-text text-success fw-bold">
-              $800,000 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="../../img/more-img/health3.png" class="card-img-top" alt="Health Aid 3" style="height: 280px" />
-          <div class="card-body">
-            <h5 class="card-title">ជំនួយសុខាភិបាល</h5>
-            <p class="card-text text-success fw-bold">
-              $1,500,000 raised
-            </p>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-end">
-      <a href="#" class="btn btn-link text-decoration-none fs-5">See more &rsaquo;</a>
-    </div>
-  </section>
+   </section>
 </body>
 <script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
