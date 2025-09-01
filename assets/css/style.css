@@ -87,3 +87,47 @@ body {
 		}
 	}
 }
+
+.carousel-inner {
+	width: 100%;
+	height: 65vh;
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.carousel-item {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+@media screen and (max-width: 991px) {
+	.carousel-inner {
+		height: 50vh;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.carousel-inner {
+		height: 25vh;
+	}
+}
+
+[data-csi="scroll"] {
+	animation: scroll both;
+	animation-timeline: view(0% 100%);
+}
+
+@keyframes scroll {
+	from {
+		scale: 1;
+	} to {
+		scale: .5;
+	}
+}
