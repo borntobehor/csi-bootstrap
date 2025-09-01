@@ -17,33 +17,33 @@
 	<body>
 		<main>
         <div class="main d-flex justify-content-center align-items-center">
-            <div class="row form-container justify-content-between rounded-5 border-0 m-4 p-lg-0">
+            <div class="row form-container justify-content-between rounded-4 border-0 m-4 p-lg-0">
                 <div class="col-md-6 col-lg-7 pb-3">
                     <h2 class="mt-5 text-center fw-bold">ចូលគណនី</h2>
-                    <p class="mt-2 mb-5 text-center">ចូលគណនីរបស់អ្នក</p>
+                    <p class="mt-2 mb-4 text-center">ចូលគណនីរបស់អ្នក</p>
                     <form action="" class="form px-sm-0 px-md-3">
                         <div class="mb-3 position-relative">
-                            <input type="email" class="form-control rounded-4 p-3" placeholder="E-mail" required>
+                            <input type="email" class="form-control rounded-5 px-3 py-2" placeholder="E-mail" required>
                             <i class="bi bi-envelope position-absolute"></i>
                         </div>
                         <div class="mb-3 position-relative">
-                            <input type="password" class="form-control rounded-4 p-3" placeholder="Password" id="password" required>
+                            <input type="password" class="form-control rounded-5 px-3 py-2" placeholder="Passwordx1" id="password" required>
                             <i class="bi bi-lock position-absolute" onclick="show()" id="eyeicon"></i>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="rememberMe">
                                 <label class="form-check-label" for="rememberMe">
-                                    Remember Password
+                                    ចងចាំលេខសម្ងាត់
                                 </label>
                             </div>
-                            <a href="#" class="form-link">Forgot password?</a>
+                            <a href="#" class="form-link">ភ្លេចលេខសម្ងាត់?</a>
                         </div>
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary btn-sign-in text-decoration-none text-white rounded-5 border-0 py-2">Sign In</a>
+                            <a href="#" class="btn btn-primary btn-sign-in text-decoration-none text-white rounded-5 border-0 py-2">ចូលគណនី</a>
                         </div>
                         <div class="text-center mt-4">
-                            <p class="form-text text-dark">Don't have an account? <a href="#" class="form-link fw-bold">Sign Up</a></p>
+                            <p class="form-text text-dark">Don't have an account? <a href="#" class="form-link fw-bold">បង្កើតគណនី</a></p>
                         </div>
                     </form>
                 </div>
@@ -51,7 +51,7 @@
                     <div class="d-flex justify-content-center align-items-center welcome">
                         <div>
                             <h4 class="text-center text-white fw-bold">បរិច្ចាកដើម្បីជីវិត</h4>
-                            <p class="text-center text-white">ចូលរួមបរិច្ចាកទាំងអស់ដើម្បីជីវិត <br> ប្រជាជនកម្ពុជា</p>
+                            <p class="text-center text-white">ចូលរួមបរិច្ចាកទាំងអស់ដើម្បីជីវិត<br> ប្រជាជនកម្ពុជា</p>
                         </div>
                     </div>
                 </div>
@@ -62,4 +62,16 @@
 	<script src="../../../bootstrap/js/bootstrap.bundle.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="../../js/theme.js"></script>
+	<script>
+    let eyeicon = document.getElementById('eyeicon');
+    let password = document.getElementById('password');
+
+    function show () {
+        if (password.type === "password") {
+            password.type = "text";
+        } else {
+            password.type = "password";
+        }
+    }
+</script>
 </html>
