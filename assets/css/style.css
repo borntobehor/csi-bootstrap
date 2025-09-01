@@ -9,14 +9,6 @@
 /** css  */
 /** hor */
 @import url("theme.css");
-/** muslim */
-
-/** punleu */
-
-/** kimhak */
-
-/** vuthy */
-
 
 :root {
 	--english: "Source Sans 3", sans-serif;
@@ -82,58 +74,16 @@ body {
 @media screen and (max-width: 991px) {
 	@keyframes glass {
 		0% {
-			top: 0;
 			width: 100%;
-			background-color: var(--bs-white);
+			background-color: var(--bs-primary);
+			border-radius: 0px;
 		}
 		5%,
 		100% {
-			top: 0;
-			background-color: var(--bs-white);
+			width: 80%;
+			background-color: var(--bs-primary);
+			top: 20px;
+			border-radius: 20px;
 		}
-	}
-}
-
-.carousel-inner {
-	width: 100%;
-	height: 65vh;
-	overflow: hidden;
-	border-radius: 40px;
-}
-
-.carousel-item {
-	width: 100%;
-	height: 100%;
-}
-
-.carousel-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: top;
-}
-
-@media screen and (max-width: 991px) {
-	.carousel-inner {
-		height: 50vh;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.carousel-inner {
-		height: 25vh;
-	}
-}
-
-[data-csi="scroll"] {
-	animation: scroll both;
-	animation-timeline: view(0% 100%);
-}
-
-@keyframes scroll {
-	from {
-		scale: 1;
-	} to {
-		scale: .5;
 	}
 }
