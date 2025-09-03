@@ -1,0 +1,67 @@
+[data-csi="glass"] {
+	background-color: var(--light);
+	position: sticky;
+	top: 0;
+	bottom: 0;
+	animation: glass both;
+	animation-timeline: view(99% 100%);
+	transition: all 1s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+	@keyframes glass {
+		0% {
+			background-color: var(--light);
+			width: 100%;
+			border-radius: 0px;
+			top: 5px;
+			box-shadow: none;
+		}
+		5%,
+		100% {
+			background-color: rgba(from var(--light) 0.9);
+			color: white;
+			top: 5px;
+			width: 95%;
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 20px;
+		}
+	}
+}
+
+[data-csi="scroll"] {
+	animation: scroll;
+	animation-timeline: view(0% 100%);
+}
+
+@keyframes scroll {
+	0% {
+		scale: 1;
+	}
+	60%, 100% {
+		scale: .9;
+		filter: blur(20px);
+	}
+}
+
+[data-csi="fade-in-out"] {
+	animation: fadeInOut both;
+	animation-timeline: view(10% 25%);
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+		scale: .8;
+		filter: blur(100px);
+	} 5%, 85% {
+		opacity: 1;
+		scale: 1;
+		filter: blur(0);
+	} 100% {
+		opacity: 1;
+		scale: .8;
+		filter: blur(20px);
+	}
+}

@@ -9,6 +9,15 @@
 /** css  */
 /** hor */
 @import url("theme.css");
+@import url("data.css");
+/** muslim */
+
+/** kim hak */
+
+/** punleu */
+
+/** vuthy */
+
 
 :root {
 	--english: "Source Sans 3", sans-serif;
@@ -29,16 +38,6 @@ body {
 	font-size: 18px;
 }
 
-[data-csi="glass"] {
-	background-color: var(--light);
-	position: sticky;
-	top: 0;
-	bottom: 0;
-	animation: glass both;
-	animation-timeline: view(99% 100%);
-	transition: all 1s ease-in-out;
-}
-
 .header-link > li > a {
 	color: var(--dark) !important;
 	&:hover,
@@ -47,27 +46,6 @@ body {
 	&.active,
 	&.show {
 		color: var(--bs-primary) !important;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	@keyframes glass {
-		0% {
-			background-color: var(--light);
-			width: 100%;
-			border-radius: 0px;
-			top: 5px;
-			box-shadow: none;
-		}
-		5%,
-		100% {
-			background-color: rgba(from var(--light) 0.9);
-			color: white;
-			top: 5px;
-			width: 95%;
-			backdrop-filter: blur(10px); border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 20px;
-		}
 	}
 }
 
@@ -87,30 +65,53 @@ body {
 	height: 100%;
 	object-fit: cover;
 	object-position: top;
-	/* aspect-ratio: 16 / 9; */
+	aspect-ratio: 16 / 9;
 }
 
-/* @media screen and (max-width: 991px) {
-	.carousel-inner {
-		height: 50vh;
+/** counter */
+
+.counter-size {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.counter {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	vertical-align: middle;
+	&::before {
+		content: '+';
+		margin-right: 5px;
 	}
 }
+
+.counter-text > 
+.col-12 .card,
+.col-lg-4 .card {
+	color: var(--light);
+	& .card-footer {
+		color: var(--warning);
+		& p {
+			font-size: clamp(1rem, 1vw + 0.6rem , 3rem);
+		}
+	}
+}
+
+
+/** media screen */
 
 @media screen and (max-width: 767px) {
-	.carousel-inner {
-		height: 25vh;
-	}
-} */
-
-[data-csi="scroll"] {
-	animation: scroll both;
-	animation-timeline: view(0% 100%);
+	
 }
 
-@keyframes scroll {
-	from {
-		scale: 1;
-	} to {
-		scale: 0;
-	}
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 992px) {
+	
 }
