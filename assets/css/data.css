@@ -45,23 +45,18 @@
 	}
 }
 
-[data-csi="fade-in-out"] {
-	animation: fadeInOut both;
-	animation-timeline: view(10% 25%);
+[data-csi="fade-out"] {
+	animation: fade-out both;
+	animation-timeline: view(1% 100%);
 }
 
-@keyframes fadeInOut {
+@keyframes fade-out {
 	0% {
-		opacity: 0;
-		scale: .8;
-		filter: blur(100px);
-	} 5%, 85% {
 		opacity: 1;
 		scale: 1;
-		filter: blur(0);
 	} 100% {
-		opacity: 1;
+		opacity: 0;
 		scale: .8;
-		filter: blur(20px);
+		filter: blur(40px);
 	}
 }
